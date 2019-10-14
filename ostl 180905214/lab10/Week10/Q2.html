@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Q2</title>
+<style>
+body {padding-top:50px} 
+</style> 
+</head>
+<body>
+	Insert Array value here: 
+<input type="text" id="text1"></input>
+<br><br>
+<input type="button" id="button1" value="Insert" onclick="add_element_to_array();"></input>
+<input type="button" id="button2" value="Display" onclick="display_array();"></input>
+<input type="button" id="button3" value="Sum" onclick="sum_array();"></input>
+<input type="button" id="button4" value="Product" onclick="pro_array();"></input>
+<div id="Result"></div> 
+<script>
+	var x = 0;
+var array = Array();
+
+function add_element_to_array()
+{
+ array[x] = document.getElementById("text1").value;
+ //alert("Element: " + array[x] + " Added at index " + x);
+ x++;
+ document.getElementById("text1").value = "";
+}
+
+function display_array()
+{
+   var e = "<hr/>";   
+    
+   for (var y=0; y<array.length; y++)
+   {
+     e += "Element " + y + " = " + array[y] + "<br/>";
+   }
+   document.getElementById("Result").innerHTML = e;
+}
+
+function sum_array()
+{
+	var sum1 = 0;
+	var x;
+	for (var y=0; y<array.length; y++) {
+		x=parseInt(array[y]);
+		sum1=sum1+x;
+	}
+	alert("Sum: "+sum1);
+}
+
+function pro_array()
+{
+	var sum1 = 1;
+	var x;
+	for (var y=0; y<array.length; y++) {
+		x=parseInt(array[y]);
+		sum1=sum1*x;
+	}
+	alert("Product "+sum1);	
+}
+</script>
+</body>
+</html>

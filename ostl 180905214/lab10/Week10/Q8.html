@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Q8</title>
+<style>
+body {padding-top:50px} 
+</style> 
+</head>
+<body>
+	Select color of fill:<br><br> 
+<input type="radio" name="color" value="red" onclick="red();"> Red  <br>
+<input type="radio" name="color" value="green" onclick="green();"> Green<br>
+<input type="radio" name="color" value="blue" onclick="blue();"> Blue
+  <br><br>
+  <canvas id="myCanvas" width="300" height="200" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.rect(40, 40, 150, 100);
+ctx.fillStyle = "red";
+ctx.fill();
+function red()
+{
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.rect(40, 40, 150, 100);
+ctx.fillStyle = "red";
+ctx.fill();
+}
+function green()
+{
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.rect(40, 40, 150, 100);
+ctx.fillStyle = "green";
+ctx.fill();
+}
+function blue()
+{
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.rect(40, 40, 150, 100);
+ctx.fillStyle = "blue";
+ctx.fill();
+}
+</script>
+</body>
+</html>

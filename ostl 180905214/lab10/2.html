@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Compute the sum and product of an array of integers</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+var x = [];
+var size = 5;
+
+for(var i=0; i<size; i++) 
+{
+	x[i] = parseInt(prompt('Enter Element ' + (i+1)));
+}
+var j=bla();
+document.getElementById("demo").innerHTML = j;
+function bla()
+{
+   var s = 0;
+   var p=1;
+    var i;
+for (i = 0; i < x.length; i += 1) 
+   {
+    s += x[i];
+    p*=x[i];
+    }
+alert("sum is"+s+"\nproduct is"+p);
+}
+</script>
+</body>
+</html>
+

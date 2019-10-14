@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>1
+</title>
+</head>
+<body style="text-align: center">
+<canvas id="paint" width="400" height="420" style="border: 2px solid grey;">
+<script>
+var c=document.getElementById("paint");
+var ctx=c.getContext("2d");
+ctx.fillStyle="red";
+ctx.fillRect(10,10,250,300);
+ctx.rotate(30*Math.PI/180);
+ctx.fillStyle="blue";
+ctx.fillRect(110,-30,250,300);
+ctx.rotate(-30*Math.PI/180);
+ctx.clearRect(0,0,10,400);
+</script>
+</canvas>
+</body>
+</html>

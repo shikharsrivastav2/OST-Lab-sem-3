@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sort the elements</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+var x = [];
+var size = 3;
+for(var i=0; i<size; i++) 
+{
+	x[i] = parseInt(prompt('Enter Element ' + (i+1)));
+}
+
+x.sort();
+document.getElementById("demo").innerHTML = x;
+
+alert("the sorted array is:"+x);
+</script>
+</body>
+</html>
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Q7</title>
+<style>
+body {padding-top:50px} 
+</style> 
+</head>
+<body>Insert Marks: <br><br>
+English:  
+<input type="number" id="text1"></input><br>Maths:
+<input type="number" id="text2"></input><br>Science: 
+<input type="number" id="text3"></input><br>Hindi:
+<input type="number" id="text4"></input><br><br>
+<input type="button" id="button1" value="Insert" onclick="add_element_to_array();"></input>
+<input type="button" id="button3" value="Display Grade" onclick="display_grade();"></input>
+<div id="Result"></div> 
+<script>
+	var x = 0;
+var array = Array();
+
+function add_element_to_array()
+{
+ array[x] = document.getElementById("text1").value;
+ x++;
+ document.getElementById("text1").value = "Done!";
+ array[x] = document.getElementById("text2").value;
+ x++;
+ document.getElementById("text2").value = "Done!";
+array[x] = document.getElementById("text3").value;
+ x++;
+ document.getElementById("text3").value = "Done!";
+ array[x] = document.getElementById("text4").value;
+ x++;
+ document.getElementById("text4").value = "Done!";
+
+}
+
+function display_grade()
+{
+	var sum1 = 0;
+	for (var y=0; y<array.length; y++) {
+		sum1=sum1+array[y];
+	}
+	sum1=sum1/400;
+	if (sum1 > 90)
+	{
+		alert("Grade: A");
+	}
+	else if (sum1 > 70)
+	{
+		alert("Grade: B");
+	}
+	else if (sum1 > 60)
+	{
+		alert("Grade: C");
+	}
+	else
+	{
+		alert("Grade: D");
+	}
+}
+
+
+</script>
+</body>
+</html>

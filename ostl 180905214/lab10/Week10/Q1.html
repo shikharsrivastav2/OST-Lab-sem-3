@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q1</title>
+</head>
+<body>
+
+<canvas id="myCanvas" width="300" height="200" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.rect(40, 40, 150, 100);
+ctx.fillStyle = "red";
+ctx.fill();
+
+ctx.beginPath();
+ctx.rect(0, 0, 0, 0);
+ctx.fillStyle = "blue";
+ctx.fill();
+</script> 
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.rotate(10 * Math.PI / 180);
+ctx.fillRect(70, 5, 130, 100);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<title>
+Quesion1
+</title>
+<script type="text/javascript"> 
+          
+            function getDiv(element) { 
+                var rect = element.getBoundingClientRect(); 
+                alert('X: ' + rect.x + ', ' + 'Y: ' + rect.y);
+            }
+            function getImage(element) { 
+                var rect = element.getBoundingClientRect(); 
+                alert('X: ' + rect.x + ', ' + 'Y: ' + rect.y );
+            } 
+        </script>
+</head>
+<body>
+	<h1>Question 1</h1>
+<div id="div1">
+	<img src="janeausten.jpg" alt="Jane Austen" id="myImage">
+
+	A gentleman and a lady travelling from Tunbridge towards that part of the Sussex coast which lies between Hastings and Eastbourne, being induced by business to quit the high road and attempt a very rough lane, were overturned in toiling up its long ascent, half rock, half sand. The accident happened just beyond the only gentleman's house near the lane—a house which their driver, on being first required to take that direction, had conceived to be necessarily their object and had with most unwilling looks been constrained to pass by. He had grumbled and shaken his shoulders and pitied and cut his horses so sharply that he might have been open to the suspicion of overturning them on purpose (especially as the carriage was not his master's own) if the road had not indisputably become worse than before, as soon as the premises of the said house were left behind—expressing with a most portentous countenance that, beyond it, no wheels but cart wheels could safely proceed. The severity of the fall was broken by their slow pace and the narrowness of the lane; and the gentleman having scrambled out and helped out his companion, they neither of them at first felt more than shaken and bruised. But the gentleman had, in the course of the extrication, sprained his foot—and soon becoming sensible of it, was obliged in a few moments to cut short both his remonstrances to the driver and his congratulations to his wife and himself—and sit down on the bank, unable to stand.
+</div>
+<br>
+<br>
+To get the postion of div element:<br>
+<button id = 'button1' onclick = "getDiv(this)"> 
+            Button 1 
+        </button> 
+        <br>
+        <br>
+        <br>
+To get the postion of image:<br>
+        <button id = 'button1' onclick = "getImage(this)"> 
+            Button 2 
+        </button> 
+          
+        <br><br> 
+</body>
+</html>

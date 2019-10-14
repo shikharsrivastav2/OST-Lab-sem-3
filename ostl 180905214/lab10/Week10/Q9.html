@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Q9</title>
+<style>
+body {padding-top:50px} 
+</style> 
+</head>
+<body>
+
+  <input type="text" name="text1" >
+  <input type="button" value="Submit" onclick="check_capital();"></input>
+
+<p>If you click submit, without filling out the text field,
+your browser will display an error message.</p>
+<script>
+	function check_capital()
+      { 
+      var in =document.getElementById("text1").value
+      var letters = /^[A-Z]+$/;
+      if(in.value.match(letters))
+      {
+      alert('Your name is accepted');
+      }
+      else
+      {
+      alert('Please input Capital characters only');
+      }
+      }
+</script>
+
+</body>
+</html>

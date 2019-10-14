@@ -1,0 +1,59 @@
+\documentclass[17pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usetheme{Warsaw}
+\usecolortheme{wolverine}
+\title{Presentation with Beamer}
+\author{Dept. of CSE}
+\institute{MIT,Manipal}
+\date{2019}
+\begin{document}
+\frame{\titlepage}
+\begin{frame}
+\frametitle{Sample frame title}This is a text in first frame.This is a text in the first frame.This is a text in first frame.
+\end{frame}
+\AtBeginSection[]
+{
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents[currentsection]
+\end{frame}
+}
+\begin{frame}
+\frametitle{introduction}in this slide,some important text will be \alert{highlighted} because it's important.
+Please dont abuse it.
+\begin{block}{Remark}
+	hello
+\end{block}
+\begin{alertblock}{Important theorum}
+	hello in red box
+\end{alertblock}
+\begin{examples}
+	Sample text in green box.The title of the block is "Examples".
+	\end{examples}	
+\end{frame}
+\begin{alertblock}{Important Theorum}\end{alertblock}
+\begin{columns}
+	\begin{column}{.5\textwidth}\begin{block}{Block 1}
+			its me shikhar
+		\end{block}\end{column}\begin{column}{.5\textwidth}
+	\begin{block}{Block 2}
+		Shikhar is a student
+	\end{block}
+\end{column}
+\end{columns}
+\begin{frame}
+\frametitle{Two-column slide}
+\begin{columns}
+\column{0.5\textwidth}
+this is the first column
+$$E=mc^2$$
+\begin{itemize}
+	\item First item
+	\item Second item
+\end{itemize}
+\column{0.5\textwidth}
+goodmorning
+\end{columns}
+\end{frame}
+
+\end{document}

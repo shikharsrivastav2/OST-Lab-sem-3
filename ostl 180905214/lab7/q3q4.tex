@@ -1,0 +1,67 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usetheme{Malmoe}
+\usecolortheme{beaver}
+\setbeamercovered{transparent}
+\title{Pokemon}
+\subtitle{Pocket Monsters}
+\author[Author 1, Author 2, Author 3]{Shikhar Srivastav\inst{1}, Sumanth Lade \inst{1}, Dhruv Milind Joshi\inst{2}}
+\institute{MIT Manipal, JMIT}
+\date{2019}
+\logo{MIT}
+\AtBeginSection[]{
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents[currentsection]
+\end{frame}
+}
+
+\begin{document}
+\frame{\titlepage}
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+\section{Introduction}
+\begin{frame}
+\frametitle{Introduction}
+The mystical creatures which inhabit the world are called...\pause Pokemon.
+\end{frame}
+\section{Characteristics}
+\begin{frame}
+\frametitle{Characteristics}
+\begin{itemize}
+\item\visible Name\pause
+\item<2>Type
+\item\invisible<4->{Height}
+\item\uncover<4->{Weight}
+\item\visible<5->{Ability}
+\item\only<6>{Moves}
+\end{itemize}
+\end{frame}
+\section{Beamer}
+\begin{frame}
+\frametitle{Lab}
+\begin{columns}
+\begin{column}[]{0.5\textwidth}
+\begin{block}{}
+Block 1
+\end{block}
+\end{column}
+\begin{column}[]{0.5\textwidth}
+\begin{alertblock}{Alert}
+Block 2
+\end{alertblock}
+\end{column}
+\end{columns}
+\end{frame}
+\begin{frame}
+\frametitle{Overlays}
+\begin{itemize}
+\item\onslide<1-2>{This is the first sentence in the frame.}\pause
+\item\only<2>{This is the second sentence in the frame.}\pause
+\item\visible<2->{This is the third sentence in the frame.}\pause
+\item\invisible<-2>{End of overlays.}
+\end{itemize}
+\end{frame}
+\end{document}
